@@ -51,4 +51,8 @@ const authSlice = createSlice({
         .addCase(updateUserMeasurements.fulfilled, handleUpdateFulfilled)
         .addCase(updateUserMeasurements.rejected, handleRefreshReject)
     }
-})
+});
+
+export const authReducer = authSlice.reducer;
+
+export const { clearErrorMessage, clearMessage } = authSlice.actions;

@@ -1,6 +1,6 @@
 
-import AuthBar from './components/AuthBar/AuthBar.jsx';
-import TrackLabel from './components/TrackLabel/TrackLabel.jsx';
+import AuthBar from '../../components/AuthBar/AuthBar';
+import TrackLabel from '../../components/TrackLabel/TrackLabel';
 
 const startPage = () => {
     return (
@@ -18,7 +18,7 @@ const startPage = () => {
             </div>
             <div>
                 <section>
-                    <img src='../../../images/mobx1.jpg' alt='fitnes hero'/>
+                    <img src='https://www.pexels.com/ru-ru/photo/175708/' alt='fitnes hero'/>
                     <TrackLabel/>
                     <div>
                         <h3>Set your goals or habits</h3>
@@ -37,3 +37,5 @@ const startPage = () => {
         </>
     )
 }
+
+export default startPage

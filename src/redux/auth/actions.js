@@ -22,6 +22,7 @@ export const handleLoginFulfilled =  (state, { payload }) => {
     state.token = payload.token;
     state.isLoggedIn = true;
     state.error = null;
+    console.log(state.isLoggedIn);
 };
 
 export const handleLogoutFulfilled = state => {

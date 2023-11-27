@@ -1,0 +1,145 @@
+.wrapper {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.6) 46.3%,
+        rgba(0, 0, 0, 0.35) 72.75%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../../images/start-mob.jpg');
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: lightgray;
+
+    @media screen and (min-width: 768px) {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.6) 46.3%,
+            rgba(0, 0, 0, 0.35) 72.75%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          url('../../images/start-tab.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @media screen and (min-width: 1440px) {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.6) 46.3%,
+            rgba(0, 0, 0, 0.35) 72.75%,
+            rgba(0, 0, 0, 0) 100%
+        ),
+        url('../../images/start-web.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+  }
+}
+
+
+.hero_section {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+}
+
+.hero_title {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 40px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 64px;
+    }
+}
+
+.hero_subtitle {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 32px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 40px;
+    }
+}
+
+.hero_text {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 22px;
+        padding: 20px 60px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 28px;
+        padding: 40px 80px;
+    }
+}
+
+.features_section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+/* 
+    @media screen and (min-width: 1440px) {
+
+    } */
+
+}
+
+.features_subsection {
+    background-color: rgba(0, 0, 0, 0.35);
+
+    @media screen and (min-width: 1440px) {
+        padding: 0 25px;
+    }
+}
+
+.features_title_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features_title {
+    color: white;
+    padding-left: 10px;
+    font-size: 16px;
+
+    @media screen and (min-width: 1440px) {
+        font-size: 24px;
+    }
+}
+
+.features_text {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+
+    @media screen and (min-width: 1440px) {
+        font-size: 20px;
+    }
+}

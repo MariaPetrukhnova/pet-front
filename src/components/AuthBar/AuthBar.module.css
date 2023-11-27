@@ -1,0 +1,41 @@
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.nav_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 10px 20px;
+  
+    background-color: #024001;
+  
+    border-radius: 10px;
+  
+    text-align: center;
+    color: #fafafa;
+    border: 2px;
+  
+    cursor: pointer;
+    text-decoration: none;
+
+    @media screen and (min-width: 768px) {
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: 1440x) {
+        padding: 20px 40px;
+        font-size: 24px;
+    }
+}
+
+.nav_btn:hover, .nav_btn:focus {
+    background-color: #bff0be;
+    color: #024001;
+}
+

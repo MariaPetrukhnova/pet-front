@@ -39,3 +39,6 @@
     color: #024001;
 }
 
+.nav_btn:last-child {
+    margin-left: 20px;
+}

@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { logIn } from '../../redux/auth/operations';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import css from './LoginForm.module.css';
 
 const emailRegexp = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 
@@ -78,8 +79,8 @@ export const LogInForm = () => {
       console.log(errors);
 
     return (
-        <>
-            <form onSubmit={handleFormSubmit}>
+        <div className={css.form_section}>
+            <form onSubmit={handleFormSubmit} className={css.form_block}>
                 <input
                 type="text"
                 id="email"
@@ -87,6 +88,7 @@ export const LogInForm = () => {
                 placeholder="Enter your email"
                 onChange={e => onEmailChange(e.target.value)}
                 value={email}
+                className={css.input_field}
                 />
                 <input
                 type="text"
@@ -95,14 +97,17 @@ export const LogInForm = () => {
                 placeholder="Enter your password"
                 onChange={e => onPasswordChange(e.target.value)}
                 value={password}
+                className={css.input_field}
                 />
-                <button type="submit">
+                <button type="submit" className={css.form_btn}>
                     Log In
                 </button>
             </form>
             <Link to="/register">
-                Sign Up
+              <button type="button" className={css.link_btn}>
+                Sign In
+              </button>
             </Link>
-        </>
+        </div>
     )
 };

@@ -23,6 +23,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        padding: 30px 20px;
     }
 
     @media screen and (min-width: 1440px) {
@@ -98,23 +99,28 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-
+    list-style: none;
+    padding: 0;
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
     }
-/* 
-    @media screen and (min-width: 1440px) {
-
-    } */
-
 }
 
 .features_subsection {
     background-color: rgba(0, 0, 0, 0.35);
+    flex: 1;
 
     @media screen and (min-width: 1440px) {
         padding: 0 25px;
+    }
+}
+.features_subsection:not(:last-child){
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        margin-right: 30px;
     }
 }
 

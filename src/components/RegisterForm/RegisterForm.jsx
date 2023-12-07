@@ -103,7 +103,7 @@ export const RegisterForm = () => {
     console.log(errors);
 
     return (
-        <article className={css.form_section}>
+        <div className={css.form_section}>
             <form onSubmit={handleFormSubmit} className={css.form_block}>
                 <input
                 type="text"
@@ -164,6 +164,6 @@ export const RegisterForm = () => {
                 Log In
               </button>
             </Link>
-        </article>
+        </div>
     )
   };

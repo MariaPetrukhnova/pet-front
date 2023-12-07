@@ -6,6 +6,7 @@ import { register } from '../../redux/auth/operations';
 import { useState } from 'react';
 import Select from 'react-select';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import css from './RegisterForm.module.css';
 
 const emailRegexp = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 
@@ -102,8 +103,8 @@ export const RegisterForm = () => {
     console.log(errors);
 
     return (
-        <>
-            <form onSubmit={handleFormSubmit}>
+        <article className={css.form_section}>
+            <form onSubmit={handleFormSubmit} className={css.form_block}>
                 <input
                 type="text"
                 id="login"
@@ -111,6 +112,7 @@ export const RegisterForm = () => {
                 placeholder="Enter your name"
                 onChange={e => onLoginChange(e.target.value)}
                 value={login}
+                className={css.input_field}
                 />
                 <input
                 type="text"
@@ -119,6 +121,7 @@ export const RegisterForm = () => {
                 placeholder="Enter your email"
                 onChange={e => onEmailChange(e.target.value)}
                 value={email}
+                className={css.input_field}
                 />
                 <input
                 type="text"
@@ -127,15 +130,40 @@ export const RegisterForm = () => {
                 placeholder="Enter your password"
                 onChange={e => onPasswordChange(e.target.value)}
                 value={password}
+                className={css.input_field}
                 />
-                <Select placeholder="Choose your goal" options={goalsArr} onChange={(e) => onGoalChange(e.value) } />
-                <button type="submit">
+                <Select 
+                  placeholder="Choose your goal" 
+                  options={goalsArr} 
+                  onChange={(e) => onGoalChange(e.value) } 
+                  styles={{
+                    placeholder: (base) => ({
+                      ...base,
+                      fontSize: '11px',
+                      color: '#90640c',
+                      fontWeight: 400,
+                      textTransform: 'uppercase'
+                    }),
+                  }}
+                  theme={(theme) => ({
+                    ...theme,
+                    borderRadius: 10,
+                    colors: {
+                      ...theme.colors,
+                      primary25: '#c28f2b',
+                      primary: '#90640c',
+                    },
+                  })}
+                  />
+                <button type="submit" className={css.form_btn}>
                     Sign up
                 </button>
             </form>
             <Link to="/login">
+              <button type="button" className={css.link_btn}>
                 Log In
+              </button>
             </Link>
-        </>
+        </article>
     )
   };

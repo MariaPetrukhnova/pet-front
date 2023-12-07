@@ -1,0 +1,50 @@
+.wrapper {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../images/register.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: top 0 center, bottom;
+    background-size: 300px 275px, 100% 490px;
+    box-sizing: border-box;
+    padding: 24px 20px;
+    align-items: center;
+    max-width: 420px;
+    width: 100%;
+
+    @media screen and (min-width: 768px){
+        max-width: 768px;
+        width: 100%;
+        padding: 32px 0;
+        background-size: 355px 312px, 100% 490px;
+        background-position: top 0 left 0, bottom;
+    }
+
+    @media screen and (min-width: 1280px){
+        max-width: 1280px;
+        width: 100%;
+        background-size:  500px 450px, 100% 500px;
+        background-position: top -60px left 0, bottom;
+    }
+}
+
+.register_section {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px){
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1280px){
+        padding: 0 50px;
+    }
+}

@@ -1,11 +1,13 @@
 import { RegisterForm } from "../../components/RegisterForm/RegisterForm";
+import css from './RegisterPage.module.css'
 
 const RegisterPage = () => {
     return(
-        <>
-            <p>RegisterPage</p>
-            <RegisterForm/>
-        </>
+        <section className={css.register_section}>
+            <div className={css.wrapper}>
+                <RegisterForm/>
+            </div>
+        </section>
     )
 };
 

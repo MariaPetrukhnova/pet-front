@@ -1,0 +1,31 @@
+.logo_box{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo_box:hover .logo_spanBlue, .logo_box:focus .logo_spanBlue {
+    color: #4f9d2d;
+}
+
+.logo_box:hover .logo_spanGreen, .logo_box:focus .logo_spanGreen {
+    color: #39a4c2;
+}
+
+.logo_img {
+    width: 48px;
+}
+
+.logo_spanBlue {
+    text-transform: uppercase;
+    color: #39a4c2;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.logo_spanGreen {
+    text-transform: uppercase;
+    color: #4f9d2d;
+    font-weight: 700;
+    font-size: 32px;
+}

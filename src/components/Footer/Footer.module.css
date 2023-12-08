@@ -1,0 +1,48 @@
+.footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+}
+.social_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.footer_copywright {
+    color: #39a4c2;
+    margin-top: 8px;
+}
+
+.socials_title{
+    color: #4f9d2d;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.socials_insta:hover, .socials_insta:focus, .socials_fb:hover, .socials_fb:focus {
+    fill: #39a4c2;
+}
+
+.socials_fb {
+    margin-left: 10px;
+}

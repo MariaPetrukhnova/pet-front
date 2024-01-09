@@ -7,6 +7,7 @@ import Loader from './Loader';
 import RestrictedRoute from './RestrictedRoute';
 import SharedLayout from './SharedLayout';
 import PrivateRoute from './PrivateRoute';
+import AchievemnetsPage from './pages/AchievementsPage/AchievementsPage';
 
 
 const StartPage = lazy(() => import('./pages/startPage/StartPage'));
@@ -34,6 +35,7 @@ useEffect(()=> {
         </Route>
         <Route path='' element={<SharedLayout/>}>
           <Route path="/main" element={<PrivateRoute component={MainPage} redirectTo="/login" />} />
+          <Route path="/achievements" element={<PrivateRoute component={AchievemnetsPage} redirectTo="/login" />} />
         </Route>
       </Routes>
     )

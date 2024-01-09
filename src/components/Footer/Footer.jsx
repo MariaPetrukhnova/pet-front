@@ -26,7 +26,7 @@ const Footer = () => {
             <div className={css.social_box}>
                 {windowWidth > 768 && <p className={css.socials_title}>Find us in socials:</p>}
                 <div className={css.icons_wrapper}>
-                    <IconContext.Provider value={{ color: "#4f9d2d", size: "32px" }} >
+                    <IconContext.Provider value={{ color: "#fff", size: "32px" }} >
                         <IoLogoInstagram className={css.socials_insta}/>
                         <IoLogoFacebook className={css.socials_fb}/>
                     </IconContext.Provider>

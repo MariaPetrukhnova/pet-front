@@ -105,7 +105,7 @@ export const LogInForm = () => {
             </form>
             <Link to="/register">
               <button type="button" className={css.link_btn}>
-                Sign In
+                Sign up
               </button>
             </Link>
         </div>

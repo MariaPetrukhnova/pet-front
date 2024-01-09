@@ -1,37 +1,37 @@
 import { NavLink } from 'react-router-dom';
+import css from './NavBar.module.css'
 
-
-const NavBar = ({ width, closeModal }) => {
+const NavBar = ({ closeModal }) => {
     return (
-        <nav>
-            <ul>
-                <li>
-                    <NavLink to="/achievements" onClick={closeModal} > 
+        <nav className={css.nav_block}>
+            <ul className={css.nav_list}>
+                <li className={css.nav_item}>
+                    <NavLink to="/achievements" onClick={closeModal} className={css.nav_link} > 
                         My achievements
                     </NavLink>
                 </li>
-                <li>
-                    <NavLink to="/habits" onClick={closeModal} >
+                <li className={css.nav_item}>
+                    <NavLink to="/habits" onClick={closeModal} className={css.nav_link}>
                         My habits
                     </NavLink>
                 </li>
-                <li>
-                    <NavLink to="/recipes" onClick={closeModal} >
+                <li className={css.nav_item}>
+                    <NavLink to="/recipes" onClick={closeModal} className={css.nav_link}>
                         My diet
                     </NavLink>
                 </li>
-                <li>
-                    <NavLink to="/activity" onClick={closeModal} >
+                <li className={css.nav_item}>
+                    <NavLink to="/activity" onClick={closeModal} className={css.nav_link}>
                         My activity
                     </NavLink>
                 </li>
-                <li>
-                    <NavLink to="/blog" onClick={closeModal} >
+                <li className={css.nav_item}>
+                    <NavLink to="/blog" onClick={closeModal} className={css.nav_link}>
                         Blog
                     </NavLink>
                 </li>
-                <li>
-                    <NavLink to="/chats" onClick={closeModal}>
+                <li className={css.nav_item}>
+                    <NavLink to="/chats" onClick={closeModal} className={css.nav_link}>
                         Chats
                     </NavLink>
                 </li>
